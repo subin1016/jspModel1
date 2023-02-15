@@ -15,9 +15,9 @@ body{
 
 .center{
 	margin: auto;
-	width: 60%;
+	width: 65%;
 	border: 3px solid #8f847b;
-	padding: 30px;
+	padding: 20px;
 	padding-bottom: 20px;
 }
 
@@ -64,7 +64,7 @@ th{
 	</div>
 	<form action="loginAf.jsp" method="post">
 	<div class="center">
-		<table>
+		<table style="border-spacing: 10px">
 			<tr>
 				<th>ID</th>
 				<td>
@@ -77,16 +77,18 @@ th{
 					<input type="password" name="pwd">
 				</td>
 			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="checkbox" id="chk_save_id">save ID
+				</td>
+			</tr>
 		</table>
-		<div align="left">
-			<br><input type="checkbox" id="chk_save_id">save ID
-		</div>
 	</div>
 	<div>
-		<input type="submit" id="loginBtn" value="log-in">
+		<input type="submit" id="loginBtn" value="Login">
 	</div>
 	<div>
-		<p>회원이 아니신가요? <a href="regi.jsp">회원가입</a></p>
+		<h5>Have no account? <a href="regi.jsp">Sign up</a></h5>
 	</div>
 	</form>
 </div>
