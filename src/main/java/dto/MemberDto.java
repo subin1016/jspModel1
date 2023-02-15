@@ -1,6 +1,8 @@
 package dto;
 
 import java.io.Serializable;
+
+import db.DBConnection;
 									// 직렬화
 public class MemberDto implements Serializable{
 	
@@ -13,7 +15,6 @@ public class MemberDto implements Serializable{
 	private int auth;		// 사용자(3)와 관리자(1) 구분
 	
 	public MemberDto() {
-		
 	}
 
 	public MemberDto(String id, String pwd, String name, String email, int auth) {
